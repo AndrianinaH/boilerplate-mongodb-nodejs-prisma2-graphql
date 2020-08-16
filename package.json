@@ -1,0 +1,25 @@
+{
+  "name": "boilerplate-mongodb-nodejs-prisma2-graphql",
+  "version": "1.0.0",
+  "description": "backend graphql nodejs prisma2 mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrianinaH/boilerplate-mongodb-nodejs-prisma2-graphql.git"
+  },
+  "keywords": [
+    "prisma2",
+    "graphql",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "AndrianinaH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrianinaH/boilerplate-mongodb-nodejs-prisma2-graphql/issues"
+  },
+  "homepage": "https://github.com/AndrianinaH/boilerplate-mongodb-nodejs-prisma2-graphql#readme"
+}
