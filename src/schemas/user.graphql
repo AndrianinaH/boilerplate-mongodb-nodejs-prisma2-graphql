@@ -1,0 +1,22 @@
+type User {
+  id: ID!
+  name: String
+  email: String
+  password: String
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+type LoginPayload {
+  accessToken: String
+}
+
+type Query {
+  me: User
+  user(id: ID!): User
+  allUsers: [User]
+}
+
+type Mutation {
+  signup(name: String!, email: String!, password: String!): User
+}

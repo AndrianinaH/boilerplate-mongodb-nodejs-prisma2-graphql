@@ -1,0 +1,8 @@
+scalar DateTime
+scalar Date
+
+type Success {
+  action: String
+  success: Boolean
+  message: String
+}

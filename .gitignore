@@ -86,3 +86,7 @@ typings/
 /VOLUMES
 dump/*
 
+
+# generated code by graphqlgen
+server/gateway/src/generated/tmp-resolvers/
+
