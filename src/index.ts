@@ -1,4 +1,5 @@
 import { graphql, buildSchema } from 'graphql';
+import config from './config';
 
 // Construct a schema, using GraphQL schema language
 const schema = buildSchema(`
@@ -16,5 +17,6 @@ const root = {
 
 // Run the GraphQL query '{ hello }' and print out the response
 graphql(schema, '{ hello }', root).then((response) => {
+  console.log(config.test);
   console.log(response);
 });
