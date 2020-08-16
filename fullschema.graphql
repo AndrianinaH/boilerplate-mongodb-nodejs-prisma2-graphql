@@ -1,5 +1,27 @@
-scalar DateTime
+"""Exposes a URL that specifies the behaviour of this scalar."""
+directive @specifiedBy(
+  """The URL that specifies the behaviour of this scalar."""
+  url: String!
+) on SCALAR
+
 scalar Date
+
+scalar DateTime
+
+type LoginPayload {
+  accessToken: String
+}
+
+type Mutation {
+  signup(name: String!, email: String!, password: String!): User
+  login(email: String!, password: String!): LoginPayload
+}
+
+type Query {
+  me: User
+  user(id: ID!): User
+  allUsers: [User]
+}
 
 type Success {
   action: String
@@ -16,16 +38,3 @@ type User {
   updatedAt: DateTime
 }
 
-type LoginPayload {
-  accessToken: String
-}
-
-type Query {
-  me: User
-  user(id: ID!): User
-  allUsers: [User]
-}
-
-type Mutation {
-  signup(name: String!, email: String!, password: String!): User
-}

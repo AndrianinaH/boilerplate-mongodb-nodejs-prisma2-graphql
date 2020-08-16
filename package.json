@@ -6,8 +6,8 @@
   "scripts": {
     "start": "ts-node-dev --transpile-only ./src/index.ts",
     "build": "tsc --build tsconfig.json",
-    "generate:graphql": "graphqlgen",
-    "generate:graphql:getschema": "get-graphql-schema http://localhost:4000 > fullschema.graphql && graphqlgen"
+    "graphqlgen": "graphqlgen",
+    "generate:graphql": "get-graphql-schema http://localhost:4000 > fullschema.graphql && graphqlgen"
   },
   "repository": {
     "type": "git",
