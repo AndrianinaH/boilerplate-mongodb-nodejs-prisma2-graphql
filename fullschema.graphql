@@ -23,6 +23,10 @@ type Query {
   allUsers: [User]
 }
 
+type Subscription {
+  onUserSignup: User
+}
+
 type Success {
   action: String
   success: Boolean

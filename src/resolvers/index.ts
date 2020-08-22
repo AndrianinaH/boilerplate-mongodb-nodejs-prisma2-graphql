@@ -8,6 +8,7 @@ import { User } from './User';
 import { Mutation } from './Mutation';
 import { Success } from './Success';
 import { LoginPayload } from './LoginPayload';
+import { Subscription } from './Subscription';
 
 export const resolvers: Resolvers = {
   Query,
@@ -15,4 +16,5 @@ export const resolvers: Resolvers = {
   Mutation,
   Success,
   LoginPayload,
+  Subscription,
 };

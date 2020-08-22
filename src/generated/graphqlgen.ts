@@ -462,6 +462,42 @@ export namespace LoginPayloadResolvers {
   }
 }
 
+export namespace SubscriptionResolvers {
+  export const defaultResolvers = {};
+
+  export type OnUserSignupResolver = {
+    subscribe: (
+      parent: undefined,
+      args: {},
+      ctx: Context,
+      info: GraphQLResolveInfo
+    ) => AsyncIterator<User | null> | Promise<AsyncIterator<User | null>>;
+    resolve?: (
+      parent: undefined,
+      args: {},
+      ctx: Context,
+      info: GraphQLResolveInfo
+    ) => User | null | Promise<User | null>;
+  };
+
+  export interface Type {
+    onUserSignup: {
+      subscribe: (
+        parent: undefined,
+        args: {},
+        ctx: Context,
+        info: GraphQLResolveInfo
+      ) => AsyncIterator<User | null> | Promise<AsyncIterator<User | null>>;
+      resolve?: (
+        parent: undefined,
+        args: {},
+        ctx: Context,
+        info: GraphQLResolveInfo
+      ) => User | null | Promise<User | null>;
+    };
+  }
+}
+
 export namespace SuccessResolvers {
   export const defaultResolvers = {
     action: (parent: Success) => parent.action,
@@ -579,6 +615,7 @@ export interface Resolvers {
   User: UserResolvers.Type;
   Mutation: MutationResolvers.Type;
   LoginPayload: LoginPayloadResolvers.Type;
+  Subscription: SubscriptionResolvers.Type;
   Success: SuccessResolvers.Type;
 }
 

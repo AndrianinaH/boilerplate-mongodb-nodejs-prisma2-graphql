@@ -7,6 +7,7 @@ import { Query } from "./Query";
 import { User } from "./User";
 import { Mutation } from "./Mutation";
 import { LoginPayload } from "./LoginPayload";
+import { Subscription } from "./Subscription";
 import { Success } from "./Success";
 
 export const resolvers: Resolvers = {
@@ -14,5 +15,6 @@ export const resolvers: Resolvers = {
   User,
   Mutation,
   LoginPayload,
+  Subscription,
   Success
 };
